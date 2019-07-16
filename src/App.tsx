@@ -27,7 +27,7 @@ const App: React.SFC = () => {
       );
 
       const containSelectedIngredients = ingredients.length
-        ? ingredients.some((ing) => flatIngredients.includes(ing))
+        ? ingredients.every((ing) => flatIngredients.includes(ing))
         : true;
 
       return containSelectedIngredients;
