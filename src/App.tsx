@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
 
-const App: React.FC = () => {
+import { recipes } from 'data';
+import { RecipeList } from 'organisms/RecipeList/RecipeList';
+import { Container } from '@material-ui/core';
+import { IngredientsChips } from 'molecules/IngredientsChips';
+
+function uniq(a: string[]): string[] {
+  return Array.from(new Set(a)).filter((item) => !!item);
+}
+
+const App: React.SFC = () => {
+  const [filteredRecipes, setFilteredRecipes] = useState([...recipes]);
+
+  const handleIngredientsChange = (ingredients: string[]) => {
+    const filtered = recipes.filter((recipe) => {
+      debugger;
+      const flatIngredients = uniq(
+        recipe.ingredients.reduce(
+          (prev, cur: any) => {
+            prev.push(cur.ingredient ? cur.ingredient : undefined);
+
+            return prev;
+          },
+          [] as string[],
+        ),
+      );
+
+      console.log(flatIngredients);
+      console.log(ingredients);
+
+      const containSelectedIngredients = ingredients.length
+        ? ingredients.some((ing) => flatIngredients.includes(ing))
+        : true;
+
+      return containSelectedIngredients;
+    });
+
+    setFilteredRecipes(filtered);
+  };
+
+  console.log(filteredRecipes);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container fixed>
+        <IngredientsChips onChange={handleIngredientsChange} />
+        <RecipeList recipes={filteredRecipes} />
+      </Container>
     </div>
   );
-}
+};
 
 export default App;
