@@ -16,13 +16,15 @@ type Props = {
   img: string;
   name: string;
   category?: Category;
+
+  onClick(recipeName: string): void;
 };
 
-export const RecipeTile: React.SFC<Props> = ({ img, name, category }) => {
+export const RecipeTile: React.SFC<Props> = ({ img, name, category, onClick }) => {
   const classes = useStyles();
 
   return (
-    <GridListTile key={name}>
+    <GridListTile key={name} onClick={() => onClick(name)}>
       <img src={img} alt={name} />
       <GridListTileBar
         title={name}

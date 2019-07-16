@@ -1,15 +1,10 @@
 import { Unit } from 'models';
 
-interface SpecialIngredient {
+export interface Ingredient {
+  id?: string;
+  ingredient?: string;
+  amount?: number;
+  unit?: Unit;
+  label?: string;
   special?: string;
 }
-
-interface BasicIngredient {
-  id?: string;
-  ingredient: string;
-  amount: number;
-  unit: Unit;
-  label?: string;
-}
-
-export type Ingredient = BasicIngredient | SpecialIngredient;

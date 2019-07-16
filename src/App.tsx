@@ -6,8 +6,8 @@ import { RecipeList } from 'organisms/RecipeList/RecipeList';
 import { Container } from '@material-ui/core';
 import { IngredientsChips } from 'molecules/IngredientsChips';
 
-function uniq(a: string[]): string[] {
-  return Array.from(new Set(a)).filter((item) => !!item);
+function uniq(array: string[]): string[] {
+  return Array.from(new Set(array)).filter((item) => !!item);
 }
 
 const App: React.SFC = () => {
@@ -15,7 +15,6 @@ const App: React.SFC = () => {
 
   const handleIngredientsChange = (ingredients: string[]) => {
     const filtered = recipes.filter((recipe) => {
-      debugger;
       const flatIngredients = uniq(
         recipe.ingredients.reduce(
           (prev, cur: any) => {
@@ -26,9 +25,6 @@ const App: React.SFC = () => {
           [] as string[],
         ),
       );
-
-      console.log(flatIngredients);
-      console.log(ingredients);
 
       const containSelectedIngredients = ingredients.length
         ? ingredients.some((ing) => flatIngredients.includes(ing))
