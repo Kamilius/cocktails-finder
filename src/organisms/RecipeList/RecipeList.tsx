@@ -35,7 +35,7 @@ export const RecipeList: React.SFC<Props> = ({ recipes }) => {
       <RecipeTile
         onClick={() => setSelectedRecipe(recipe)}
         key={recipe.name}
-        img="http://lorempixel.com/300/400"
+        img={recipe.image ? recipe.image : ''}
         name={recipe.name}
         category={recipe.category}
       />

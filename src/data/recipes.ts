@@ -3,6 +3,7 @@ import { Recipe, Unit } from 'models';
 export const recipes: Recipe[] = [
   {
     name: 'Vesper',
+    image: '/images/vesper.jpg',
     glass: 'martini',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -245,6 +246,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Angel Face',
+    image: '/images/angel_face.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -480,7 +482,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Grasshopper',
-    image: '/images/grasshoper.jpg',
+    image: '/images/grasshopper.jpg',
     glass: 'martini',
     category: 'After Dinner Cocktail',
     ingredients: [
