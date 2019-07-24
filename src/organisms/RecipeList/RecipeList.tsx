@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
-import { createStyles, Theme, makeStyles, Paper, Typography } from '@material-ui/core';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import ListSubheader from '@material-ui/core/ListSubheader';
+import {
+  createStyles,
+  Theme,
+  makeStyles,
+  Paper,
+  Typography,
+  Divider,
+  GridList,
+  GridListTile,
+  ListSubheader,
+} from '@material-ui/core';
+
 import { RecipeTile } from 'molecules/RecipeTile/RecipeTile';
 import { Recipe } from 'models';
 
@@ -14,6 +22,16 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'space-around',
       overflow: 'hidden',
       backgroundColor: theme.palette.background.paper,
+    },
+    details: {
+      maxWidth: '500px',
+      padding: theme.spacing(3, 2),
+    },
+    divider: {
+      margin: '16px',
+    },
+    image: {
+      float: 'left',
     },
     gridList: {
       width: '100%',
@@ -46,17 +64,21 @@ export const RecipeList: React.SFC<Props> = ({ recipes }) => {
   return (
     <div className={classes.root}>
       {!!selectedRecipe ? (
-        <Paper>
-          <Typography variant="h5" component="h3">
-            {selectedRecipe.name}
-          </Typography>
-          <Typography component="ul">Ingredients:</Typography>
-          {selectedRecipe.ingredients.map(({ ingredient, special, amount, unit }) => (
-            <Typography key={ingredient} component="li">
-              {ingredient || special} {amount}
-              {unit}
+        <Paper className={classes.details}>
+          <div>
+            <img className={classes.image} src={selectedRecipe.image || ''} alt={selectedRecipe.name} />
+            <Typography variant="h5" component="h3">
+              {selectedRecipe.name}
             </Typography>
-          ))}
+            <Typography component="ul">Ingredients:</Typography>
+            {selectedRecipe.ingredients.map(({ ingredient, special, amount, unit }) => (
+              <Typography key={ingredient} component="li">
+                {ingredient || special} {amount}
+                {unit}
+              </Typography>
+            ))}
+          </div>
+          <Divider className={classes.divider} variant="middle" />
           <Typography component="p">{selectedRecipe.preparation}</Typography>
         </Paper>
       ) : null}
