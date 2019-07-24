@@ -15,6 +15,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Bacardi',
+    image: '/images/bacardi2.jpg',
     glass: 'martini',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -31,6 +32,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Negroni',
+    image: '/images/negroni.jpg',
     glass: 'old-fashioned',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -48,6 +50,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Rose',
+    image: '/images/rose.jpg',
     glass: 'martini',
     ingredients: [
       { unit: Unit.cl, amount: 2, ingredient: 'Kirsch' },
@@ -64,6 +67,7 @@ export const recipes: Recipe[] = [
   {
     name: 'Old Fashioned',
     glass: 'old-fashioned',
+    image: '/images/old_fashioned.jpg',
     category: 'Before Dinner Cocktail',
     ingredients: [
       {
@@ -82,6 +86,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Tuxedo',
+    image: '/images/tuxedo.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -106,6 +111,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Mojito',
+    image: '/images/mojito.jpg',
     glass: 'collins',
     category: 'Longdrink',
     ingredients: [
@@ -126,6 +132,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: "Horse's Neck",
+    image: '/images/horse_neck.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -138,6 +145,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: "Planter's Punch",
+    image: '/images/planters_punch.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -165,6 +173,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Sea Breeze',
+    image: '/images/sea_breeze.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -177,6 +186,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Pisco Sour',
+    image: '/images/pisco_sour.jpg',
     glass: 'old-fashioned',
     category: 'All Day Cocktail',
     ingredients: [
@@ -194,6 +204,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Long Island Iced Tea',
+    image: '/images/long_island_tea.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -216,6 +227,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Clover Club',
+    image: '/images/clover_club.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -244,6 +256,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Mimosa',
+    image: '/images/mimosa.jpg',
     glass: 'champagne-flute',
     category: 'Sparkling Cocktail',
     ingredients: [
@@ -256,6 +269,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Whiskey Sour',
+    image: '/images/whiskey_sour.jpg',
     glass: 'old-fashioned',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -279,6 +293,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Screwdriver',
+    image: '/images/screwdriver.jpg',
     glass: 'highball',
     category: 'All Day Cocktail',
     ingredients: [
@@ -290,6 +305,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Cuba Libre',
+    image: '/images/cuba_libre.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -302,6 +318,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Manhattan',
+    image: '/images/manhattan.jpg',
     glass: 'martini',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -324,6 +341,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Porto Flip',
+    image: '/images/porto_flip.jpg',
     glass: 'martini',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -335,6 +353,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Gin Fizz',
+    image: '/images/gin_fizz.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -353,6 +372,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Espresso Martini',
+    image: '/images/espresso_martini.jpg',
     glass: 'martini',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -372,6 +392,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Margarita',
+    image: '/images/margarita.jpg',
     glass: 'margarita',
     category: 'All Day Cocktail',
     ingredients: [
@@ -389,6 +410,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'French 75',
+    image: '/images/french75.jpg',
     glass: 'champagne-tulip',
     category: 'Sparkling Cocktail',
     ingredients: [
@@ -402,6 +424,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Yellow Bird',
+    image: '/images/yellow_bird.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -414,6 +437,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Pina Colada',
+    image: '/images/pina_colada.jpg',
     glass: 'hurricane',
     category: 'Longdrink',
     ingredients: [
@@ -427,6 +451,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Aviation',
+    image: '/images/aviation.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -443,6 +468,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Bellini',
+    image: '/images/bellini.jpg',
     glass: 'champagne-flute',
     category: 'Sparkling Cocktail',
     ingredients: [
@@ -454,6 +480,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Grasshopper',
+    image: '/images/grasshoper.jpg',
     glass: 'martini',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -475,6 +502,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Tequila Sunrise',
+    image: '/images/tequila_sunrise.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -493,6 +521,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Daiquiri',
+    image: '/images/daiquiri.jpg',
     glass: 'martini',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -509,6 +538,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Rusty Nail',
+    image: '/images/rusty_nail.jpg',
     glass: 'old-fashioned',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -525,6 +555,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'B52',
+    image: '/images/b52.jpg',
     glass: 'shot',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -552,6 +583,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Stinger',
+    image: '/images/stinger.jpg',
     glass: 'martini',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -567,6 +599,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Golden Dream',
+    image: '/images/golden_dream.jpg',
     glass: 'martini',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -579,6 +612,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'God Mother',
+    image: '/images/godfather (1).jpg',
     glass: 'old-fashioned',
     ingredients: [
       { unit: Unit.cl, amount: 3.5, ingredient: 'Vodka' },
@@ -588,6 +622,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Spritz Veneziano',
+    image: '/images/spritz_veneziano.jpg',
     glass: 'old-fashioned',
     category: 'Sparkling Cocktail',
     ingredients: [
@@ -600,6 +635,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Bramble',
+    image: '/images/bramble.jpg',
     glass: 'old-fashioned',
     category: 'All Day Cocktail',
     ingredients: [
@@ -619,6 +655,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Alexander',
+    image: '/images/alexander.jpg',
     glass: 'martini',
     ingredients: [
       { unit: Unit.cl, amount: 3, ingredient: 'Cognac' },
@@ -634,6 +671,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Lemon Drop Martini',
+    image: '/images/lemon_drop.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -651,6 +689,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'French Martini',
+    image: '/images/french_martini.jpg',
     glass: 'martini',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -663,6 +702,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Black Russian',
+    image: '/images/black_russian.jpg',
     glass: 'old-fashioned',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -674,6 +714,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Bloody Mary',
+    image: '/images/bloody_mary.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -690,6 +731,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Mai-tai',
+    image: '/images/mai_tai.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -714,6 +756,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Barracuda',
+    image: '/images/baracuda.jpg',
     glass: 'margarita',
     category: 'Sparkling Cocktail',
     ingredients: [
@@ -731,6 +774,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Sex on the Beach',
+    image: '/images/sex_on_beach.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -744,6 +788,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Monkey Gland',
+    image: '/images/monkey_gland.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -756,6 +801,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Derby',
+    image: '/images/derby.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -768,6 +814,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Sidecar',
+    image: '/images/sidecar.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -779,6 +826,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Irish Coffee',
+    image: '/images/irish_coffee.jpg',
     glass: 'hot-drink',
     category: 'Hot Drink',
     ingredients: [
@@ -797,6 +845,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Sazerac',
+    image: '/images/sazerac.jpg',
     glass: 'old-fashioned',
     category: 'After Dinner Cocktail',
     ingredients: [
@@ -811,6 +860,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Americano',
+    image: '/images/americano.jpg',
     glass: 'old-fashioned',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -828,6 +878,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Singapore Sling',
+    image: '/images/singapore_sling.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -855,6 +906,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'French Connection',
+    image: '/images/french_connection.jpg',
     glass: 'old-fashioned',
     ingredients: [
       { unit: Unit.cl, amount: 3.5, ingredient: 'Cognac' },
@@ -864,6 +916,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Moscow Mule',
+    image: '/images/moscow_mule.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -877,6 +930,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'John Collins',
+    image: '/images/john_collins.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -896,6 +950,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Kir',
+    image: '/images/kir.jpg',
     glass: 'white-wine',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -912,6 +967,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Mint Julep',
+    image: '/images/mint_julep.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -931,6 +987,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: "Tommy's Margarita",
+    image: '/images/tommy_margarita.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -942,6 +999,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Paradise',
+    image: '/images/paradise.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -953,6 +1011,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Dirty Martini',
+    image: '/images/dirty_martini.jpg',
     glass: 'martini',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -970,6 +1029,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Champagne Cocktail',
+    image: '/images/champagne_cocktail.jpg',
     glass: 'champagne-flute',
     category: 'Sparkling Cocktail',
     ingredients: [
@@ -984,6 +1044,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Mary Pickford',
+    image: '/images/mary_pickford.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -1001,6 +1062,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Hemingway Special',
+    image: '/images/hemingway_special.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -1018,6 +1080,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: "Dark 'n' Stormy",
+    image: '/images/dark_stormy.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -1029,6 +1092,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Ramos Fizz',
+    image: '/images/ramos_fizz.jpg',
     glass: 'highball',
     category: 'Longdrink',
     ingredients: [
@@ -1052,6 +1116,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Russian Spring Punch',
+    image: '/images/russian_spring.jpg',
     glass: 'highball',
     category: 'Sparkling Cocktail',
     ingredients: [
@@ -1075,6 +1140,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'God Father',
+    image: '/images/godfather.jpg',
     glass: 'old-fashioned',
     ingredients: [
       {
@@ -1089,6 +1155,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Cosmopolitan',
+    image: '/images/cosmopolitan.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -1112,6 +1179,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Dry Martini',
+    image: '/images/dry_martini.jpg',
     glass: 'martini',
     category: 'Before Dinner Cocktail',
     ingredients: [
@@ -1128,6 +1196,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Between the Sheets',
+    image: '/images/between_sheets.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -1140,6 +1209,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Casino',
+    image: '/images/casino.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -1163,6 +1233,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Caipirinha',
+    image: '/images/caipirinha.jpg',
     glass: 'old-fashioned',
     category: 'All Day Cocktail',
     ingredients: [
@@ -1175,6 +1246,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Vampiro',
+    image: '/images/vampiro.jpg',
     glass: 'highball',
     ingredients: [
       {
@@ -1197,6 +1269,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Kamikaze',
+    image: '/images/kamikaze.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -1208,6 +1281,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'White Lady',
+    image: '/images/white_lady.jpg',
     glass: 'martini',
     category: 'All Day Cocktail',
     ingredients: [
@@ -1219,6 +1293,7 @@ export const recipes: Recipe[] = [
   },
   {
     name: 'Harvey Wallbanger',
+    image: '/images/harvey_wallbanger.jpg',
     glass: 'highball',
     category: 'All Day Cocktail',
     ingredients: [
