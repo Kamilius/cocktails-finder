@@ -25,7 +25,7 @@ export const IngredientsChips: React.SFC<Props> = (props) => {
 
   return (
     <FormControl className={classes.formControl}>
-      <InputLabel htmlFor="select-multiple-chip">Chip</InputLabel>
+      <InputLabel htmlFor="select-multiple-chip">Ingredients</InputLabel>
       <Select
         multiple
         value={selectedIngredients}

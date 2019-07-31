@@ -36,8 +36,6 @@ const App: React.SFC = () => {
     setFilteredRecipes(filtered);
   };
 
-  console.log(filteredRecipes);
-
   return (
     <div className="App">
       <Container fixed>

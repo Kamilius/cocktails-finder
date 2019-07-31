@@ -10,6 +10,7 @@ import {
   GridListTile,
   ListSubheader,
 } from '@material-ui/core';
+import LazyLoad from 'react-lazyload';
 
 import { RecipeTile } from 'molecules/RecipeTile/RecipeTile';
 import { Recipe } from 'models';
@@ -59,24 +60,26 @@ export const RecipeList: React.SFC<Props> = ({ recipes }) => {
       />
     ));
 
-  console.log(selectedRecipe);
-
   return (
     <div className={classes.root}>
       {!!selectedRecipe ? (
         <Paper className={classes.details}>
           <div>
-            <img className={classes.image} src={selectedRecipe.image || ''} alt={selectedRecipe.name} />
-            <Typography variant="h5" component="h3">
-              {selectedRecipe.name}
-            </Typography>
-            <Typography component="ul">Ingredients:</Typography>
-            {selectedRecipe.ingredients.map(({ ingredient, special, amount, unit }) => (
-              <Typography key={ingredient} component="li">
-                {ingredient || special} {amount}
-                {unit}
+            <LazyLoad height={163}>
+              <img className={classes.image} src={selectedRecipe.image || ''} alt={selectedRecipe.name} />
+            </LazyLoad>
+            <div>
+              <Typography variant="h5" component="h3">
+                {selectedRecipe.name}
               </Typography>
-            ))}
+              <Typography component="ul">Ingredients:</Typography>
+              {selectedRecipe.ingredients.map(({ ingredient, special, amount, unit }) => (
+                <Typography key={ingredient} component="li">
+                  {ingredient || special} {amount}
+                  {unit}
+                </Typography>
+              ))}
+            </div>
           </div>
           <Divider className={classes.divider} variant="middle" />
           <Typography component="p">{selectedRecipe.preparation}</Typography>
