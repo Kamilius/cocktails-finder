@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cocktailsfinder-dev-130243-authRole",
+      "UnauthRoleArn": "arn:aws:iam::092193689166:role/amplify-cocktailsfinder-dev-130243-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::092193689166:role/amplify-cocktailsfinder-dev-130243-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-cocktailsfinder-dev-130243-deployment",
+      "UnauthRoleName": "amplify-cocktailsfinder-dev-130243-unauthRole",
+      "StackName": "amplify-cocktailsfinder-dev-130243",
+      "StackId": "arn:aws:cloudformation:eu-central-1:092193689166:stack/amplify-cocktailsfinder-dev-130243/4ec78f00-e2f8-11eb-9ad2-0645d6889650",
+      "AmplifyAppId": "dls0fuuwaavmt"
+    }
+  }
+}
