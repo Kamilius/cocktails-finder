@@ -1,6 +1,5 @@
 {
   "name": "cocktails-finder",
-  "homepage": "https://Kamilius.github.io/cocktails-finder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
